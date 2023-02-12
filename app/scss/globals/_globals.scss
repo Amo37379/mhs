@@ -1,0 +1,169 @@
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $secondary-font;
+    font-size: 1rem;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.62em;
+    text-transform: none;
+    letter-spacing: 0.1px;
+    min-width: 200px;
+    background: $secondary-color;
+}
+
+.hide {
+    visibility: hidden;
+    opacity: 0;
+}
+
+//sections
+section,
+.page {
+    position: relative;
+    overflow: hidden;
+}
+
+.page {
+    animation: fade-in 1.5s;
+}
+
+.section-content-wrapper {
+    padding: 8em 0;
+    border: solid 1px red;
+}
+
+a,
+a:hover {
+    @include transition(all, 0.3s, ease-in-out);
+    text-decoration: none;
+    color: #fff;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.image {
+    max-width: 100%;
+    height: auto;
+}
+
+.bg-image {
+    @include background(center, no-repeat, cover);
+    z-index: -1;
+}
+
+.bg-heading-color {
+    background-color: $heading-color;
+}
+
+.secondary-color {
+    color: $secondary-color;
+}
+
+// Headings
+h1 {
+    @include font($primary-font, 700, 48px);
+    color: #fff;
+    line-height: 1;
+    text-transform: capitalize;
+    @include md {
+        font-size: 64px;
+    }
+    @include xl {
+        font-size: 80px;
+    }
+}
+
+h2 {
+    @include font($primary-font, 700, 26px);
+    color: $heading-color;
+    text-transform: capitalize;
+    line-height: 1.2;
+    @include md {
+        font-size: 36px;
+    }
+    @include lg {
+        font-size: 46px;
+    }
+    @include xl {
+        font-size: 56px;
+    }
+}
+
+h3 {
+    @include font($primary-font, 600, 24px);
+    color: $heading-color;
+    text-transform: capitalize;
+}
+
+h4 {
+    @include font($primary-font, 700, 1.356em);
+    line-height: 1.214em;
+    letter-spacing: -0.28px;
+    margin-bottom: 0.5em;
+    color: $heading-color;
+}
+
+h5 {
+    @include font($primary-font, 700, 35px);
+}
+
+h6 {
+    @include font($primary-font, 600, 25px);
+    color: $secondary-color;
+}
+
+.sub-h {
+    @include font($primary-font, 600, 14px);
+    color: $heading-color;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+//heading > heading block
+.heading-block {
+    .sub-h {
+        margin-bottom: 8px;
+        span::before {
+            display: block;
+            margin-bottom: 20px;
+            font-size: 26px;
+            color: $primary-color;
+        }
+    }
+    h2 {
+        margin-bottom: 30px;
+    }
+}
+
+//paragraph
+p {
+    @include font($secondary-font, 400, 17px);
+    color: $text-color;
+    line-height: 30px;
+    margin: 0;
+}
+
+.para {
+    @include font($secondary-font, 400, 17px);
+    color: $secondary-color2;
+    line-height: 38px;
+}

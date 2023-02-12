@@ -1,0 +1,127 @@
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    border: none;
+    background: none;
+    display: block;
+    border-radius: 0 0;
+    .card-image {
+        overflow: hidden;
+        img {
+            @include transition(all, 0.3s, ease-in-out);
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+    }
+    .card-price {
+        @include font($primary-font, 600, 22px);
+        color: $heading-color;
+    }
+    &:hover {
+        .card-image {
+            img {
+                transform: scale(105%);
+            }
+        }
+    }
+}
+
+.card-style1 {
+    padding: 3.2em 2em 1.2em;
+    background: #fff;
+    height: 100%;
+    @include transition(all, 0.2s, ease-in-out);
+    cursor: pointer;
+    .card-icon {
+        font-size: 46px;
+        color: $primary-color;
+        margin-bottom: 20px;
+        @include transition(all, 0.2s, ease-in-out);
+    }
+    .card-dots {
+        margin-top: 25px;
+        font-size: 26px;
+        color: $text-color;
+        @include transition(all, 0.2s, ease-in-out);
+    }
+    &:hover {
+        box-shadow: 0 3px 30px rgb(0 0 0 / 5%);
+        .card-icon {
+            color: #000;
+        }
+        .card-dots {
+            color: $primary-color;
+        }
+    }
+}
+
+.card-style2 {
+    background: #fff;
+    height: 100%;
+    width: 100%;
+    .progress {
+        height: 7px;
+        border-radius: 0px;
+        .progress-bar {
+            background: $link-color2;
+        }
+    }
+    .card-content {
+        padding: 2rem 1.8rem;
+        p {
+            margin-bottom: 1rem;
+        }
+        .button-wrapper {
+            margin-bottom: 20px;
+        }
+    }
+    .raised {
+        color: #000;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 30px;
+        .goal-label,
+        .income-label {
+            margin-right: 5px;
+        }
+    }
+}
+
+.card-style3 {
+    .card-date {
+        color: $heading-color;
+        margin-bottom: 15px;
+        .date-month {
+            opacity: 0.5;
+        }
+    }
+    h4 {
+        margin-top: 15px;
+        @include md {
+            margin-top: 0;
+        }
+    }
+    .para {
+        p {
+            font-size: 14px;
+        }
+        span {
+            color: $heading-color;
+            font-family: $primary-font;
+            margin-right: 15px;
+            font-weight: 700;
+        }
+    }
+    .card-price {
+        @include md {
+            text-align: end;
+        }
+    }
+    border-bottom: 1px solid $border-color;
+    padding-bottom: 1.7em;
+    margin-bottom: 1.7em;
+}

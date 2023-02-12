@@ -1,0 +1,48 @@
+.hero-section {
+    .hero-banner-slider {
+        .hero-slide {
+            h1,
+            .para,
+            .button-wrapper {
+                opacity: 0;
+            }
+        }
+        .owl-item.active {
+            h1 {
+                animation: fade-in-left 0.5s 0.4s forwards;
+            }
+            .para {
+                animation: fade-in-left 0.5s 0.6s forwards;
+            }
+            .button-wrapper {
+                animation: fade-in-left 0.5s 0.8s forwards;
+            }
+            .bg-image {
+                animation: zoom-in 40s forwards;
+            }
+        }
+        .owl-dots {
+            position: absolute;
+            right: 0;
+            left: 0;
+            bottom: 20px;
+            .owl-dot {
+                padding: 10px !important;
+                span {
+                    @include transition(all, 200ms, linear);
+                    background: $secondary-color;
+                }
+                &:hover {
+                    span {
+                        background: $link-color;
+                    }
+                }
+            }
+            .owl-dot.active {
+                span {
+                    background: $link-color;
+                }
+            }
+        }
+    }
+}

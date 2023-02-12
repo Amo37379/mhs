@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="site-description">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" />
+    <script src="https://kit.fontawesome.com/c4b9f7965f.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;600;700;800&family=Nunito:wght@200;300;400&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="page">
+        <header class="site-header">
+            <div class="container-fluid">
+                <div class="d-flex align-items-center justify-content-between">
+                    <div class="site-logo">
+                        <a href="#">
+                            <img src="https://shakti.ancorathemes.com/wp-content/uploads/2022/03/Logo-retina-inverse.png"
+                                alt="logo" width="89" height="77">
+                        </a>
+                    </div>
+                    <nav class="navigation d-none d-lg-block align-middle">
+                        <ul class="menu d-flex">
+                            <li class="menu-item main-menu-item active">
+                                <a href="#" class="menu-link">
+                                    <span>Home</span>
+                                </a>
+                                <ul class="sub-menu">
+                                    <li class="menu-item active">
+                                        <a href="#" class="sub-menu-link">
+                                            <span>page 1</span>
+                                        </a>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a href="#" class="sub-menu-link">
+                                            <span>page 1</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="menu-item main-menu-item">
+                                <a href="#" class="menu-link">
+                                    <span>Who we are</span>
+                                </a>
+                            </li>
+                            <li class="menu-item main-menu-item">
+                                <a href="#" class="menu-link">
+                                    <span>Blog</span>
+                                </a>
+                            </li>
+                            <li class="menu-item main-menu-item">
+                                <a href="#" class="menu-link">
+                                    <span>Donation</span>
+                                </a>
+                            </li>
+                            <li class="menu-item main-menu-item">
+                                <a href="#" class="menu-link">
+                                    <span>Contacts</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="wrapper d-flex align-items-center">
+                        <div class="menu-mobile d-lg-none me-4" id="openNav">
+                            <div class="hamburger-menu">
+                                <span class="fa-solid fa-bars"></span>
+                            </div>
+                        </div>
+                        <div class="button-wrapper d-none d-md-block">
+                            <a href="#" class="button button-style1">
+                                donate
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="mobile-nav hide" id="mobileNav">
+                    <div class="close-nav" id="closeNav">
+                        <span class="text-capitalize me-2 fs-5 text-white">close</span><i
+                            class="fa-solid fa-xmark fa-xl secondary-color ms-2"></i>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-center w-100 vh-100 bg-heading-color overlay">
+                        <ul class="menu d-flex flex-column align-items-center">
+                            <li class="menu-item">
+                                <a href="#" class="menu-link">
+                                    <span>Home</span>
+                                </a>
+                                <ul class="sub-menu">
+                                    <li class="menu-item active">
+                                        <a href="#" class="sub-menu-link">
+                                            <span>page 1</span>
+                                        </a>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a href="#" class="sub-menu-link">
+                                            <span>page 1</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#" class="menu-link">
+                                    <span>Who we are</span>
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#" class="menu-link">
+                                    <span>Blog</span>
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#" class="menu-link">
+                                    <span>Donation</span>
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#" class="menu-link">
+                                    <span>Contacts</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class="hero-section">
+            <div class="owl-carousel owl-theme hero-banner-slider">
+                <div class="hero-slide w-100 vh-100 d-flex justify-content-center align-items-center">
+                    <div class="bg-image w-100 h-100 overlay"
+                        style="background-image: url(https://shakti.ancorathemes.com/wp-content/uploads/revslider/slider-2/46_2-1-copyright.jpg);">
+                    </div>
+                    <div class="container text-center">
+                        <div class="hero-content">
+                            <h1>Krishna Gaura Purnima <br> Celebration
+                            </h1>
+                            <div class="para d-none d-sm-block">
+                                <span>Folk Festival of Colors and Annual Spring Festival</span>
+                            </div>
+                            <div class="button-wrapper">
+                                <a href="#" class="button button-style2">
+                                    Read More
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-slide w-100 vh-100 d-flex justify-content-center align-items-center">
+                    <div class="bg-image w-100 h-100 overlay"
+                        style="background-image: url(https://shakti.ancorathemes.com/wp-content/uploads/revslider/slider-2/46_2-2-copyright.jpg);">
+                    </div>
+                    <div class="container text-center">
+                        <div class="content">
+                            <h1>The Incredible Temples of pattadakal
+                            </h1>
+                            <div class="para d-none d-sm-block">
+                                <span>The famous complex of acient indian temples</span>
+                            </div>
+                            <div class="button-wrapper">
+                                <a href="#" class="button button-style2">
+                                    Read More
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-slide w-100 vh-100 d-flex justify-content-center align-items-center">
+                    <div class="bg-image w-100 h-100 overlay"
+                        style="background-image: url(https://shakti.ancorathemes.com/wp-content/uploads/revslider/slider-2/46_2-3-copyright.jpg);">
+                    </div>
+                    <div class="container text-center">
+                        <div class="content">
+                            <h1>Krishna Gaura Purnima <br> Celebration
+                            </h1>
+                            <div class="para d-none d-sm-block">
+                                <span>Folk Festival of Colors and Annual Spring Festival</span>
+                            </div>
+                            <div class="button-wrapper">
+                                <a href="#" class="button button-style2">
+                                    Read More
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="cards-section">
+            <div class="section-content-wrapper">
+                <div class="container">
+                    <div class="heading-block text-center">
+                        <div class="sub-h">
+                            <span class="fa-solid fa-place-of-worship d-block"></span>krishna temples
+                        </div>
+                        <h2>hare krishna temple tours</h2>
+                    </div>
+                    <div class="cards row">
+                        <div class="col col-12 col-lg-6 col-xxl-3">
+                            <div class="card card-style1 text-center">
+                                <div class="card-icon">
+                                    <i class="fa-solid fa-synagogue"></i>
+                                </div>
+                                <div class="card-content">
+                                    <h3>Rituals</h3>
+                                    <p>Sed do eiusm od tempor lore</p>
+                                </div>
+                                <div class="card-dots">
+                                    <i class="fa-solid fa-ellipsis"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col col-12 col-lg-6 col-xxl-3">
+                            <div class="card card-style1 text-center">
+                                <div class="card-icon">
+                                    <i class="fa-solid fa-om"></i>
+                                </div>
+                                <div class="card-content">
+                                    <h3>Rituals</h3>
+                                    <p>Sed do eiusm od tempor</p>
+                                </div>
+                                <div class="card-dots">
+                                    <i class="fa-solid fa-ellipsis"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col col-12 col-lg-6 col-xxl-3">
+                            <div class="card card-style1 text-center">
+                                <div class="card-icon">
+                                    <i class="fa-solid fa-spa"></i>
+                                </div>
+                                <div class="card-content">
+                                    <h3>Rituals</h3>
+                                    <p>Sed do eiusm od tempor</p>
+                                </div>
+                                <div class="card-dots">
+                                    <i class="fa-solid fa-ellipsis"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col col-12 col-lg-6 col-xxl-3">
+                            <div class="card card-style1 text-center">
+                                <div class="card-icon">
+                                    <i class="fa-solid fa-hands-bound"></i>
+                                </div>
+                                <div class="card-content">
+                                    <h3>Rituals</h3>
+                                    <p>Sed do eiusm od tempor</p>
+                                </div>
+                                <div class="card-dots">
+                                    <i class="fa-solid fa-ellipsis"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="heading-content-section bg-light">
+            <div class="section-content-wrapper">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <div class="heading-block">
+                                <div class="sub-h">
+                                    <span>Spritual Excursions</span>
+                                </div>
+                                <h2>We do tours to hare krishna temples</h2>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="heading-block">
+                                <div class="sub-h">&nbsp;</div>
+                            </div>
+                            <div class="content">
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae nihil sit, dolor
+                                    pariatur quibusdam suscipit quia dignissimos vitae mollitia deleniti.</p>
+                                <br>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae nihil sit, dolor
+                                    pariatur quibusdam suscipit quia dignissimos vitae mollitia deleniti.</p>
+                                <br>
+                                <div class="button-wrapper">
+                                    <a href="#" class="button button-style3">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="num-count-section bg-light">
+            <div class="section-content-wrapper">
+                <div class="container">
+                    <div class="row">
+                        <div class="col col-12 col-md-4">
+                            <div class="num-icon">
+                                <i class="fa-solid fa-synagogue"></i>
+                            </div>
+                            <div class="content">
+                                <h1 class="num" data-val="110">000</h1>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+                            </div>
+                        </div>
+                        <div class="col col-12 col-md-4">
+                            <div class="num-icon">
+                                <i class="fa-solid fa-om"></i>
+                            </div>
+                            <div class="content">
+                                <h1 class="num" data-val="458">000</h1>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+                            </div>
+                        </div>
+                        <div class="col col-12 col-md-4">
+                            <div class="num-icon">
+                                <i class="fa-solid fa-spa"></i>
+                            </div>
+                            <div class="content">
+                                <h1 class="num" data-val="234">000</h1>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="cards-section">
+            <div class="section-content-wrapper">
+                <div class="container">
+                    <div class="heading-block text-center">
+                        <div class="sub-h">
+                            <span class="fa-solid fa-place-of-worship d-block"></span>krishna temples
+                        </div>
+                        <h2>hare krishna temple tours</h2>
+                    </div>
+                    <div class="cards row">
+                        <div class="col col-12 col-md-4">
+                            <a href="#">
+                                <div class="card card-style2 donation-card">
+                                    <div class="card card-image">
+                                        <img src="https://shakti.ancorathemes.com/wp-content/uploads/2022/03/image-7a-copyright.jpg"
+                                            alt="card-image">
+                                    </div>
+                                    <div class="card-content">
+                                        <div class="button-wrapper">
+                                            <span class="button button-style2-s">charity</span>
+                                        </div>
+                                        <h3>Restoration of Temple</h3>
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium,
+                                            quibusdam!
+                                        </p>
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" aria-label="donation-progress"
+                                                aria-valuemin="0" aria-valuemax="100" data-raised="16324"
+                                                data-goal="50000">
+                                            </div>
+                                        </div>
+                                        <div class="raised">
+                                            <span class="income" data-amounts="{&quot;USD&quot;: &quot;15485&quot;}">
+                                                <span class="income-label">Raised:</span> <span
+                                                    class="income-text">00</span>
+                                            </span>
+                                            <span class="goal" data-amounts="{&quot;USD&quot;: 30000}">
+                                                <span class="goal-label">Goal:</span> <span class="goal-text">00</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col col-12 col-md-4">
+                            <a href="#">
+                                <div class="card card-style2 donation-card">
+                                    <div class="card-image">
+                                        <img src="https://shakti.ancorathemes.com/wp-content/uploads/2022/03/image-7a-copyright.jpg"
+                                            alt="card-image">
+                                    </div>
+                                    <div class="card-content">
+                                        <div class="button-wrapper">
+                                            <span class="button button-style2-s">charity</span>
+                                        </div>
+                                        <h3>Restoration of Temple</h3>
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium,
+                                            quibusdam!
+                                        </p>
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" aria-label="donation-progress"
+                                                aria-valuemin="0" aria-valuemax="100" data-raised="40525"
+                                                data-goal="90000">
+                                            </div>
+                                        </div>
+                                        <div class="raised">
+                                            <span class="income" data-amounts="{&quot;USD&quot;: &quot;15485&quot;}">
+                                                <span class="income-label">Raised:</span> <span
+                                                    class="income-text">00</span>
+                                            </span>
+                                            <span class="goal" data-amounts="{&quot;USD&quot;: 30000}">
+                                                <span class="goal-label">Goal:</span> <span class="goal-text">00</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col col-12 col-md-4">
+                            <a href="#">
+                                <div class="card card-style2 donation-card">
+                                    <div class="card-image">
+                                        <img src="https://shakti.ancorathemes.com/wp-content/uploads/2022/03/image-7a-copyright.jpg"
+                                            alt="card-image">
+                                    </div>
+                                    <div class="card-content">
+                                        <div class="button-wrapper">
+                                            <span class="button button-style2-s">charity</span>
+                                        </div>
+                                        <h3>Restoration of Temple</h3>
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium,
+                                            quibusdam!
+                                        </p>
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" aria-label="donation-progress"
+                                                aria-valuemin="0" aria-valuemax="100" data-raised="25343"
+                                                data-goal="30000">
+                                            </div>
+                                        </div>
+                                        <div class="raised">
+                                            <span class="income" data-amounts="{&quot;USD&quot;: &quot;15485&quot;}">
+                                                <span class="income-label">Raised:</span> <span
+                                                    class="income-text">00</span>
+                                            </span>
+                                            <span class="goal" data-amounts="{&quot;USD&quot;: 30000}">
+                                                <span class="goal-label">Goal:</span> <span class="goal-text">00</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="maintenance-donations">
+            <div class="section-content-wrapper">
+                <div class="container">
+                    <div class="heading-block text-center">
+                        <div class="sub-h">
+                            <span class="fa-solid fa-place-of-worship d-block"></span>krishna temples
+                        </div>
+                        <h2>hare krishna temple tours</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                    </div>
+                    <div class="button-wrapper text-center">
+                        <button role="button" class="button button-style4">Donate now</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="content-image-section bg-light">
+            <div class="section-content-wrapper">
+                <div class="container">
+                    <div class="row">
+                        <div class="col col-12 col-md-5">
+                            <div class="image-wrapper">
+                                <img src="https://shakti.ancorathemes.com/wp-content/uploads/2022/02/image-61-copyright.jpg"
+                                    width="1138" height="1280" alt="image" class="image">
+                            </div>
+                        </div>
+                        <div class="col col-12 col-md-7">
+                            <div class="heading-block">
+                                <div class="sub-h">Buddhist temples</div>
+                                <h2>Tours to the hinduist temple complex</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint iste sed voluptatum
+                                    inventore commodi deleniti autem quas? Sit neque quis temporibus perferendis?
+                                    Beatae, nulla id qui pr, at? Lorem ipsum dolor sit amet
+                                    consectetur adipisicing elit. Ipsam tenetur laudantium, aspernatur corrupti facere
+                                    molestias expedita, tempore nemo, consequatur explicabo quidem iste quaerat fuga
+                                    voluptatem saepe fugiat nesciunt itaque nostrum similique corporis animi sit vero
+                                    quod earum. Molestias tempora praesentium sapiente officiis nesciunt provident
+                                    debitis voluptatibus obcaecati eos ratione sed ullam suscipit eius laudantium aut
+                                    voluptate, iusto tempore, qui voluptatum eligendi blanditiis. Et libero assumenda
+                                    vel sequi veritatis praesentium labore quisquam id ullam placeat quae asperiores hic
+                                    quibusdam possimus maiores, corporis eveniet quas at quidem magnam aliquid? Magnam
+                                    soluta impedit beatae illo eligendi distinctio obcaecati voluptatibus placeat vel,
+                                    amet magni?</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="banner">
+            <div class="w-100 d-flex justify-content-center align-items-center h-100">
+                <div class="bg-image w-100 h-100 overlay"
+                    style="background-image: url(https://shakti.ancorathemes.com/wp-content/uploads/revslider/slider-2/46_2-1-copyright.jpg);">
+                </div>
+                <div class="container">
+                    <div class="content text-center">
+                        <h1>Who we are</h1>
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb justify-content-center">
+                                <li class="breadcrumb-item active">Who are we</li>
+                                <li class="breadcrumb-item" aria-current="page">Who are we</li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="cards-section bg-light">
+            <div class="section-content-wrapper">
+                <div class="container">
+                    <div class="row">
+                        <div class="col col-12 col-lg-5">
+                            <div class="heading-block">
+                                <div class="sub-h">
+                                    <span>Upcoming Trips</span>
+                                </div>
+                                <h2>Event Schedule</h2>
+                            </div>
+                        </div>
+                        <div class="col col-12 col-lg-7">
+                            <div class="heading-block">
+                                <div class="sub-h">&nbsp;</div>
+                            </div>
+                            <a href="#">
+                                <div class="card card-style3">
+                                    <div class="row">
+                                        <div class="col col-12 col-md-2">
+                                            <div class="card-date">
+                                                <h5>
+                                                    11
+                                                </h5>
+                                                <div class="date-month">
+                                                    May, 2023
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col col-12 col-md-3">
+                                            <div class="card-image">
+                                                <img width="890" height="664"
+                                                    src="https://shakti.ancorathemes.com/wp-content/uploads/2022/02/image-14-copyright-890x664.jpg"
+                                                    alt="card-image">
+                                            </div>
+                                        </div>
+                                        <div class="col col-12 col-md-5">
+                                            <div class="card-content">
+                                                <h4>Exursion to Kali Temple</h4>
+                                                <span class="para">
+                                                    <p><span>New York</span> May 11, 2023 13:30 - Jul 28, 2023 17:00</p>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="col col-12 col-md-2">
+                                            <div class="card-price">
+                                                <span>Free</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="card card-style3">
+                                    <div class="row">
+                                        <div class="col col-12 col-md-2">
+                                            <div class="card-date">
+                                                <h5>
+                                                    11
+                                                </h5>
+                                                <div class="date-month">
+                                                    May, 2023
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col col-12 col-md-3">
+                                            <div class="card-image">
+                                                <img width="890" height="664"
+                                                    src="https://shakti.ancorathemes.com/wp-content/uploads/2022/02/image-14-copyright-890x664.jpg"
+                                                    alt="card-image">
+                                            </div>
+                                        </div>
+                                        <div class="col col-12 col-md-5">
+                                            <div class="card-content">
+                                                <h4>Exursion to Kali Temple</h4>
+                                                <span class="para">
+                                                    <p><span>New York</span> May 11, 2023 13:30 - Jul 28, 2023 17:00</p>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="col col-12 col-md-2">
+                                            <div class="card-price">
+                                                <span>Free</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="card card-style3">
+                                    <div class="row">
+                                        <div class="col col-12 col-md-2">
+                                            <div class="card-date">
+                                                <h5>
+                                                    11
+                                                </h5>
+                                                <div class="date-month">
+                                                    May, 2023
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col col-12 col-md-3">
+                                            <div class="card-image">
+                                                <img width="890" height="664"
+                                                    src="https://shakti.ancorathemes.com/wp-content/uploads/2022/02/image-14-copyright-890x664.jpg"
+                                                    alt="card-image">
+                                            </div>
+                                        </div>
+                                        <div class="col col-12 col-md-5">
+                                            <div class="card-content">
+                                                <h4>Exursion to Kali Temple</h4>
+                                                <span class="para">
+                                                    <p><span>New York</span> May 11, 2023 13:30 - Jul 28, 2023 17:00</p>
+                                                </span>
+                                            </div>
+                                        </div <div class="col col-12 col-md-2">
+                                        <div class="card-price">
+                                            <span>Free</span>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+    </div>
+    </section>
+    <footer class="site-footer">
+        <div class="section-content-wrapper">
+            <div class="container">
+                <div class="row">
+                    <div class="col col-12 col-sm-6 col-lg-3">
+                        <div class="heading-block">
+                            <h6>Working Hours</h6>
+                        </div>
+                        <div class="content">
+                            <p class="para">Mon-Fri: 9 AM - 6 PM</p>
+                            <p class="para">Saturday: 9 AM - 4 PM</p>
+                            <p class="para">Sunday: Closed</p>
+                        </div>
+                    </div>
+                    <div class="col col-12 col-sm-6 col-lg-3">
+                        <div class="heading-block">
+                            <h6>Office</h6>
+                        </div>
+                        <div class="content">
+                            <p class="para">Germany - <br>785 15h Street, Office 478 <br> Berlin, De 815566</p>
+                            <p class="para"><span class="email">info@gmail.com</span></p>
+                            <h6>+1840 841 25 69</h6>
+                        </div>
+                    </div>
+                    <div class="col col-12 col-sm-6 col-lg-3">
+                        <div class="heading-block">
+                            <h6>Links</h6>
+                        </div>
+                        <ul class="menu">
+                            <li class="menu-item">Home</li>
+                            <li class="menu-item">Events</li>
+                            <li class="menu-item">About Us</li>
+                            <li class="menu-item">Blog</li>
+                            <li class="menu-item">Contacts</li>
+                        </ul>
+                    </div>
+                    <div class="col col-12 col-sm-6 col-lg-3">
+                        <div class="heading-block">
+                            <h6>Get in Touch</h6>
+                        </div>
+                        <div class="footer-icons">
+                            <a href="#" class="footer-icon">
+                                <div class="icon">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                </div>
+                            </a>
+                            <a href="#" class="footer-icon">
+                                <div class="icon">
+                                    <i class="fa-brands fa-twitter"></i>
+
+                                </div>
+                            </a>
+                            <a href="#" class="footer-icon">
+                                <div class="icon">
+                                    <i class="fa-brands fa-instagram"></i>
+
+                                </div>
+                            </a>
+                            <a href="#" class="footer-icon">
+                                <div class="icon">
+                                    <i class="fa-brands fa-tiktok"></i>
+
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    </div>
+    <script src="js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/bundle.js"></script>
+    <script src="js/owl.js"></script>
+</body>
+
+</html>

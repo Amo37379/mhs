@@ -1,0 +1,48 @@
+@mixin flex ($align-items, $justify-content, $flex-direction, $flex-wrap) {
+    display: flex;
+    align-items: $align-items;
+    justify-content: $justify-content;
+    flex-direction: $flex-direction;
+    flex-wrap: $flex-wrap;
+}
+
+@mixin background($position, $repeat, $size) {
+    background-position: $position;
+    background-repeat: $repeat;
+    background-size: $size;
+}
+
+@mixin transition($all, $duration, $style) {
+    transition: $all $duration $style;
+}
+
+@mixin font($font, $font-weight, $font-size) {
+    font-family: $font;
+    font-weight: $font-weight;
+    font-size: $font-size;
+}
+
+@mixin menu-link($padding, $color) {
+    .menu-link,
+    .sub-menu-link {
+        padding: $padding;
+        color: $color;
+    }
+}
+
+@mixin line-under($height) {
+    span {
+        position: relative;
+        padding-bottom: 5px;
+        &::before {
+            @include transition(all, 100ms, ease-in);
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 100%;
+            height: $height;
+            background-color: $secondary-color;
+        }
+    }
+}

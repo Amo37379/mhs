@@ -1,0 +1,18 @@
+.banner {
+    height: 60vh;
+    width: 100%;
+    .content {
+        h1 {
+            font-size: 46px;
+            @include lg {
+                font-size: 56px;
+            }
+        }
+        .breadcrumb {
+            margin-top: 30px;
+            &-item {
+                color: #fff;
+            }
+        }
+    }
+}

@@ -1,0 +1,24 @@
+//abstracts
+@import "abstracts/mixins";
+@import "abstracts/variables";
+@import "abstracts/animation";
+@import "abstracts/breakpoints";
+
+//globals
+@import "globals/globals";
+//layout
+@import "layout/header";
+@import "layout/footer";
+//components
+@import "components/carousel";
+@import "components/navbar";
+@import "components/buttons";
+@import "components/cards";
+//pages
+@import "pages/home";
+//sections
+@import "sections/hero";
+@import "sections/cards-section";
+@import "sections/num-box";
+@import "sections/banner";
+@import "sections/content-image";

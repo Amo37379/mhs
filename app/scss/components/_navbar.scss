@@ -1,0 +1,88 @@
+.navigation {
+    .menu {
+        @include font($primary-font, 300, 17px);
+        .menu-item {
+            @include transition(all, 100ms, ease-in);
+            @include menu-link(0.8em, $secondary-color);
+            position: relative;
+            .menu-link {
+                @include line-under(3px);
+            }
+            .sub-menu {
+                position: absolute;
+                top: 100%;
+                background-color: $heading-color-light;
+                width: 175px;
+                padding: 16px 0;
+                visibility: hidden;
+                opacity: 0;
+                @include transition(all, 200ms, ease-in);
+                .menu-item {
+                    padding: 0.5em 0;
+                    font-size: 14px;
+                    &:hover {
+                        padding-left: 15px;
+                        .sub-menu-link {
+                            color: $secondary-color;
+                        }
+                        span::before {
+                            right: 0;
+                        }
+                    }
+                }
+                &-link {
+                    @include line-under(0.5px);
+                }
+                @include menu-link(0.8em, $secondary-color2);
+            }
+            &:hover {
+                .menu-link {
+                    span::before {
+                        right: 0;
+                    }
+                }
+                .sub-menu {
+                    visibility: visible;
+                    opacity: 1;
+                }
+            }
+        }
+        .menu-item.active {
+            >span::before {
+                right: 0;
+            }
+        }
+        .main-menu-item {
+            height: 10vh;
+            display: flex;
+            align-items: center;
+        }
+    }
+}
+
+.mobile-nav {
+    @include transition(all, 0.5s, ease-in-out);
+    .close-nav {
+        position: absolute;
+        top: 50px;
+        right: 20px;
+        z-index: 100;
+        span {
+            @include font($primary-font, 300, 13px);
+            color: $text-color;
+        }
+    }
+    .menu {
+        @include font($primary-font, 600, 26px);
+        .menu-item {
+            padding: 0.5em;
+        }
+    }
+}
+
+.hamburger-menu {
+    span {
+        font-size: 24px;
+        color: $secondary-color;
+    }
+}

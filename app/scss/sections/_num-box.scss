@@ -1,0 +1,17 @@
+.num-count-section {
+    .col {
+        text-align: center;
+        padding: 0 30px;
+        .num-icon {
+            color: $link-color;
+            margin-bottom: 20px;
+            font-size: 26px;
+        }
+        .num {
+            color: #000;
+        }
+        p {
+            margin: 20px 0;
+        }
+    }
+}

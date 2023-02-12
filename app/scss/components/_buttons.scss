@@ -1,0 +1,71 @@
+.button {
+    @include transition(all, 0.2s, ease-in-out);
+    font-family: $primary-font;
+    font-size: 13px;
+    font-weight: 600;
+    font-style: normal;
+    line-height: 21px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+    color: #fff;
+    position: relative;
+    border: none;
+    &:hover {
+        filter: brightness(85%);
+    }
+}
+
+.button-style1 {
+    background-color: $primary-color;
+    padding: 15px 40px;
+}
+
+.button-style2 {
+    background-color: $link-color;
+    padding: 20px 30px;
+    line-height: 8;
+    &-s {
+        @extend .button-style2;
+        padding: 6px 16px;
+        font-size: 11px;
+        line-height: 1;
+    }
+}
+
+.button-style3,
+.button-style3:hover {
+    color: $heading-color;
+    font-weight: 700;
+    text-transform: capitalize;
+    font-size: 17px;
+    &::after {
+        @include transition(all, 0.2s, ease-in-out);
+        content: "";
+        height: 2px;
+        background-color: $heading-color;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: -5px;
+    }
+    &:hover {
+        &::after {
+            right: 100%;
+        }
+    }
+}
+
+.button-style4 {
+    background-color: $link-color2;
+    padding: 17px 44px;
+    margin-top: 20px;
+}
+
+.button-style5,
+.button-style5:hover {
+    color: $heading-color;
+    font-weight: 600;
+    text-transform: capitalize;
+    font-size: 14px;
+}

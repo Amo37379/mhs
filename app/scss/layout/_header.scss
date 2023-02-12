@@ -1,0 +1,15 @@
+.site-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    background: transparent;
+    padding: 30px 20px 30px 20px;
+    @include lg {
+        padding: 30px 50px 30px 50px;
+    }
+    .site-logo {
+        z-index: 10;
+    }
+}
